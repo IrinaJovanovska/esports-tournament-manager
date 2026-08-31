@@ -1,4 +1,4 @@
-# 🎮 eSports Tournament Manager CRM
+🎮 eSports Tournament Manager CRM
 
 An end-to-end CRM solution for managing eSports tournaments, players, teams, matches, registrations, coaches and player feedback.
 
@@ -6,7 +6,7 @@ Built with **Microsoft Power Platform**, combining low-code configuration with c
 
 ---
 
-## 📌 Project Overview
+📌 Project Overview
 
 The eSports Tournament Manager is a custom CRM application designed to support the management of eSports tournaments throughout their complete lifecycle.
 
@@ -28,7 +28,7 @@ The solution was developed using Microsoft Dataverse as the central data platfor
 
 ---
 
-## 🛠️ Technologies
+🛠️ Technologies
 
 | Technology | Purpose |
 |---|---|
@@ -43,7 +43,7 @@ The solution was developed using Microsoft Dataverse as the central data platfor
 
 ---
 
-## 🏗️ Solution Architecture
+🏗️ Solution Architecture
 
 The solution follows a Microsoft Power Platform architecture:
 
@@ -91,12 +91,12 @@ The solution follows a Microsoft Power Platform architecture:
 
 The solution contains the following custom Dataverse tables:
 
-Player
-Team
-Tournament
-Match
-Registration
-Feedback
+Player,
+Team,
+Tournament,
+Match,
+Registration,
+Feedback,
 Coach
 
 The tables are connected through Dataverse relationships to support tournament registration, team composition, match management and feedback.
@@ -105,11 +105,11 @@ Player
 
 Stores player information including:
 
-Name
-GamerTag
-Captain status
-Rank
-Preferred role
+Name,
+GamerTag,
+Captain status,
+Rank,
+Preferred role,
 Player number
 
 A unique GamerTag alternate key is used to help maintain player uniqueness.
@@ -118,29 +118,32 @@ Team
 
 Stores:
 
-Team name
-Region
-Coach
-Founded date
+Team name,
+Region,
+Coach,
+Founded date,
 Team-related statistics
+
 Tournament
 
 Stores:
 
-Tournament title
-Game
-Start date
-End date
+Tournament title,
+Game,
+Start date,
+End date,
 Tournament status
+
 Match
 
 Stores:
 
-Tournament
-Team A
-Team B
-Scheduled time
+Tournament,
+Team A,
+Team B,
+Scheduled time,
 Winner
+
 Registration
 
 Connects players with tournaments and teams and stores registration information and status.
@@ -149,9 +152,9 @@ Feedback
 
 Stores:
 
-Player
-Tournament
-Rating
+Player,
+Tournament,
+Rating,
 Comments
 
 Field-level security is used to protect player identity when feedback is submitted anonymously.
@@ -160,44 +163,49 @@ Coach
 
 Stores coach information including:
 
-Name
-Years of experience
+Name,
+Years of experience,
 Certification
+
 🎨 Model-driven App
 
 The main application is a customized Power Apps Model-driven App.
 
 The application includes:
 
-Customized sitemap navigation
-Custom forms
-Custom views
-Subgrids
-Quick View forms
-Related records
-Tournament management
-Team management
-Player management
-Match management
-Registration management
+Customized sitemap navigation,
+Custom forms,
+Custom views,
+Subgrids,
+Quick View forms,
+Related records,
+Tournament management,
+Team management,
+Player management,
+Match management,
+Registration management,
 Feedback management
+
 Tournament Form
 
 The Tournament form provides access to:
 
-Tournament information
-Registered players
-Related matches
-Tournament status
+Tournament information,
+Registered players,
+Related matches,
+Tournament status,
 Tournament information card
+
 Team Form
 
 The Team form provides:
 
-Team information
-Team roster
+Team information,
+Team roster,
 Related players
+
 Coach information through a Quick View component
+
 ⚙️ Business Logic
 
 Several business rules and processes were implemented to enforce application requirements.
@@ -233,6 +241,7 @@ If matches are still missing winners:
 
 A warning is displayed
 The incomplete matches are identified
+
 🔐 Security
 
 The solution includes dedicated security roles:
@@ -361,6 +370,7 @@ Tournament completion is triggered when appropriate
 Team Deletion
 Team deletion is blocked when registered players exist
 Team deletion is allowed when the team has no registered players
+
 🚀 Deployment
 
 The application components are organized within a Dataverse Solution.
@@ -373,23 +383,29 @@ Screenshots of the application and its main components will be added here.
 
 Model-driven App
 
-Screenshot coming soon
+![Model-driven App](screenshots/MainApp.png)
 
 Tournament Form
 
-Screenshot coming soon
+![Tournament Form](screenshots/Tournamentform1.png)
+![Tournament Form](screenshots/TournamentForm2.png)
 
 Match Form
 
-Screenshot coming soon
+![Match Form](screenshots/MatchForm.png)
+
 
 Player Form & Embedded Canvas App
 
-Screenshot coming soon
+![Player Canvas App](screenshots/PlayerForm1.png)
+![Player Canvas App](screenshots/PlayerForm2.png)
+![Player Canvas App](screenshots/PlayerForm3.png)
+![Player Canvas App](screenshots/PlayerForm4.png)
+![Player Canvas App](screenshots/PlayerForm5.png)
 
 Tournament Information Card
 
-Screenshot coming soon
+![Tournament Information Card](screenshots/TournamentInfoCard.png)
 
 🎯 Project Goals
 
