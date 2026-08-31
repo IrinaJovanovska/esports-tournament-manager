@@ -397,15 +397,15 @@ Match Form
 
 Player Form & Embedded Canvas App
 
-![Player Canvas App](screenshots/Player_Form1.png)
-![Player Canvas App](screenshots/Player_Form2.png)
-![Player Canvas App](screenshots/Player_Form3.png)
-![Player Canvas App](screenshots/Player_Form4.png)
-![Player Canvas App](screenshots/Player_Form5.png)
+![Player Canvas App](screenshots/PlayerForm1.png)
+![Player Canvas App](screenshots/PlayerForm2.png)
+![Player Canvas App](screenshots/PlayerForm3.png)
+![Player Canvas App](screenshots/PlayerForm4.png)
+![Player Canvas App](screenshots/PlayerForm5.png)
 
 Tournament Information Card
 
-![Tournament Information Card](screenshots/Tournament_Info_Card.png)
+![Tournament Information Card](screenshots/TournamentInfoCard.png)
 
 🎯 Project Goals
 
