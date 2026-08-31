@@ -390,8 +390,6 @@ The solution can be exported from the development environment for deployment to 
 
 📸 Screenshots
 
-Screenshots of the application and its main components will be added here.
-
 Model-driven App
 
 ![Model-driven App](screenshots/MainApp.png)
