@@ -392,20 +392,20 @@ Tournament Form
 
 Match Form
 
-![Match Form](screenshots/MatchForm.png)
+![Match Form](screenshots/Match-Form.png)
 
 
 Player Form & Embedded Canvas App
 
-![Player Canvas App](screenshots/PlayerForm1.png)
-![Player Canvas App](screenshots/PlayerForm2.png)
-![Player Canvas App](screenshots/PlayerForm3.png)
-![Player Canvas App](screenshots/PlayerForm4.png)
-![Player Canvas App](screenshots/PlayerForm5.png)
+![Player Canvas App](screenshots/Player-Form1.png)
+![Player Canvas App](screenshots/Player-Form2.png)
+![Player Canvas App](screenshots/Player-Form3.png)
+![Player Canvas App](screenshots/Player-Form4.png)
+![Player Canvas App](screenshots/Player-Form5.png)
 
 Tournament Information Card
 
-![Tournament Information Card](screenshots/TournamentInfoCard.png)
+![Tournament Information Card](screenshots/Tournament-Info-Card.png)
 
 🎯 Project Goals
 
