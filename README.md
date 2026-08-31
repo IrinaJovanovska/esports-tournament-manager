@@ -383,7 +383,7 @@ Screenshots of the application and its main components will be added here.
 
 Model-driven App
 
-screenshots/Main App.png
+![Model-driven App](screenshots/MainApp.png)
 
 Tournament Form
 
@@ -392,7 +392,7 @@ Tournament Form
 
 Match Form
 
-![Match Form](screenshots/Match_Form.png)
+![Match Form](screenshots/MatchForm.png)
 
 
 Player Form & Embedded Canvas App
