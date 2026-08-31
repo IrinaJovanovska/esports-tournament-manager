@@ -27,6 +27,13 @@ The system provides functionality for:
 The solution was developed using Microsoft Dataverse as the central data platform and Power Apps as the application layer.
 
 ---
+🔗 Application
+
+The solution was developed and tested in a Microsoft Dataverse development environment.
+
+[Open the eSports Tournament Manager application](https://orgac663cb2.crm4.dynamics.com/main.aspx?appid=e9361bd3-4688-f111-ab10-70a8a52ef749&pagetype=entitylist&etn=sol_tournament&viewid=8fd597ac-eab3-4b53-93b8-b4424b760473&viewType=1039)
+
+> Access to the application requires appropriate Microsoft Dataverse permissions.
 
 🛠️ Technologies
 
@@ -411,6 +418,7 @@ Tournament Information Card
 
 ![Tournament Information Card](screenshots/TournamentInfoCard.png)
 
+
 🎯 Project Goals
 
 This project demonstrates practical experience with:
@@ -428,6 +436,7 @@ Business Rules
 Field-Level Security
 Dataverse Solutions
 Unit Testing with FakeXrmEasy
+
 👩‍💻 Author
 
 Irina Jovanovska
