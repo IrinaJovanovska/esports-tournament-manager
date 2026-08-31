@@ -383,7 +383,7 @@ Screenshots of the application and its main components will be added here.
 
 Model-driven App
 
-![Model-driven App](screenshots/MainApp.png)
+screenshots/Main App.png
 
 Tournament Form
 
