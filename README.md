@@ -437,6 +437,17 @@ Field-Level Security
 Dataverse Solutions
 Unit Testing with FakeXrmEasy
 
+🔧 Custom Development
+
+The solution combines low-code Power Platform components with custom development:
+
+- JavaScript Web Resources for client-side form behavior
+- Custom Command Bar actions
+- C# Dataverse Plugins for server-side business logic
+- Power Automate for workflow automation
+- HTML Web Resource for custom UI
+- FakeXrmEasy for plugin unit testing
+
 👩‍💻 Author
 
 Irina Jovanovska
