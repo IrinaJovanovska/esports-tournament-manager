@@ -361,6 +361,10 @@ The component provides a more visual and user-friendly presentation of tournamen
 
 Unit tests were implemented using FakeXrmEasy for critical Dataverse Plugin logic.
 
+Application functionality was validated in a Microsoft Dataverse
+development environment through end-to-end testing of forms,
+commands, plugins and Power Automate processes.
+
 Test scenarios include:
 
 Match Result
