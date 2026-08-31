@@ -1,33 +1,34 @@
-🎮 eSports Tournament Manager CRM
+# 🎮 eSports Tournament Manager CRM
 
-An end-to-end CRM solution for managing eSports tournaments, players, teams, matches, registrations, coaches and player feedback.
+An end-to-end CRM solution for managing eSports tournaments, players, teams, matches, registrations, coaches, and player feedback.
 
-Built with **Microsoft Power Platform**, combining low-code configuration with custom JavaScript, C# Dataverse Plugins and Power Automate automation.
+Built with **Microsoft Power Platform**, combining low-code configuration with custom JavaScript, C# Dataverse Plugins, and Power Automate automation.
 
 ---
 
-📌 Project Overview
+## 📌 Project Overview
 
 The eSports Tournament Manager is a custom CRM application designed to support the management of eSports tournaments throughout their complete lifecycle.
 
 The system provides functionality for:
 
-- Player management
-- Team management
-- Tournament management
-- Player registration
-- Match scheduling and results
-- Tournament standings
-- Coach management
-- Player feedback
-- Automated notifications
-- Role-based security
-- Automated business logic
+* Player management
+* Team management
+* Tournament management
+* Player registration
+* Match scheduling and results
+* Tournament standings
+* Coach management
+* Player feedback
+* Automated notifications
+* Role-based security
+* Automated business logic
 
-The solution was developed using Microsoft Dataverse as the central data platform and Power Apps as the application layer.
+The solution was developed using **Microsoft Dataverse** as the central data platform and **Power Apps** as the application layer.
 
 ---
-🔗 Application
+
+## 🔗 Application
 
 The solution was developed and tested in a Microsoft Dataverse development environment.
 
@@ -35,22 +36,24 @@ The solution was developed and tested in a Microsoft Dataverse development envir
 
 > Access to the application requires appropriate Microsoft Dataverse permissions.
 
-🛠️ Technologies
+---
 
-| Technology | Purpose |
-|---|---|
-| Microsoft Dataverse | Data model and relational data storage |
-| Power Apps | Model-driven and Canvas applications |
-| Power Automate | Workflow automation and notifications |
-| JavaScript | Client-side form and command customization |
-| C# | Dataverse Plugins and server-side business logic |
-| HTML | Custom Web Resource |
-| FakeXrmEasy | Plugin unit testing |
-| Dataverse Solutions | Solution management and deployment |
+## 🛠️ Technologies
+
+| Technology          | Purpose                                          |
+| ------------------- | ------------------------------------------------ |
+| Microsoft Dataverse | Data model and relational data storage           |
+| Power Apps          | Model-driven and Canvas applications             |
+| Power Automate      | Workflow automation and notifications            |
+| JavaScript          | Client-side form and command customization       |
+| C#                  | Dataverse Plugins and server-side business logic |
+| HTML                | Custom Web Resource                              |
+| FakeXrmEasy         | Plugin unit testing                              |
+| Dataverse Solutions | Solution management and deployment               |
 
 ---
 
-🏗️ Solution Architecture
+## 🏗️ Solution Architecture
 
 The solution follows a Microsoft Power Platform architecture:
 
@@ -70,9 +73,9 @@ The solution follows a Microsoft Power Platform architecture:
                     │ Teams                   │
                     │ Tournaments             │
                     │ Matches                 │
-                    │ Registrations            │
+                    │ Registrations           │
                     │ Feedback                │
-                    │ Coaches                  │
+                    │ Coaches                 │
                     └───────┬─────────┬───────┘
                             │         │
                ┌────────────┘         └─────────────┐
@@ -94,137 +97,144 @@ The solution follows a Microsoft Power Platform architecture:
       │ Feedback         │
       └──────────────────┘
 ```
-📊 Dataverse Data Model
+
+---
+
+## 📊 Dataverse Data Model
 
 The solution contains the following custom Dataverse tables:
 
-Player,
-Team,
-Tournament,
-Match,
-Registration,
-Feedback,
-Coach
+* **Player**
+* **Team**
+* **Tournament**
+* **Match**
+* **Registration**
+* **Feedback**
+* **Coach**
 
-The tables are connected through Dataverse relationships to support tournament registration, team composition, match management and feedback.
+The tables are connected through Dataverse relationships to support tournament registration, team composition, match management, and feedback.
 
-Player
+### Player
 
 Stores player information including:
 
-Name,
-GamerTag,
-Captain status,
-Rank,
-Preferred role,
-Player number
+* Name
+* GamerTag
+* Captain status
+* Rank
+* Preferred role
+* Player number
 
-A unique GamerTag alternate key is used to help maintain player uniqueness.
+A unique **GamerTag alternate key** is used to help maintain player uniqueness.
 
-Team
-
-Stores:
-
-Team name,
-Region,
-Coach,
-Founded date,
-Team-related statistics
-
-Tournament
+### Team
 
 Stores:
 
-Tournament title,
-Game,
-Start date,
-End date,
-Tournament status
+* Team name
+* Region
+* Coach
+* Founded date
+* Team-related statistics
 
-Match
+### Tournament
 
 Stores:
 
-Tournament,
-Team A,
-Team B,
-Scheduled time,
-Winner
+* Tournament title
+* Game
+* Start date
+* End date
+* Tournament status
 
-Registration
+### Match
+
+Stores:
+
+* Tournament
+* Team A
+* Team B
+* Scheduled time
+* Winner
+
+### Registration
 
 Connects players with tournaments and teams and stores registration information and status.
 
-Feedback
+### Feedback
 
 Stores:
 
-Player,
-Tournament,
-Rating,
-Comments
+* Player
+* Tournament
+* Rating
+* Comments
 
 Field-level security is used to protect player identity when feedback is submitted anonymously.
 
-Coach
+### Coach
 
 Stores coach information including:
 
-Name,
-Years of experience,
-Certification
+* Name
+* Years of experience
+* Certification
 
-🎨 Model-driven App
+---
 
-The main application is a customized Power Apps Model-driven App.
+## 🎨 Model-driven App
+
+The main application is a customized **Power Apps Model-driven App**.
 
 The application includes:
 
-Customized sitemap navigation,
-Custom forms,
-Custom views,
-Subgrids,
-Quick View forms,
-Related records,
-Tournament management,
-Team management,
-Player management,
-Match management,
-Registration management,
-Feedback management
+* Customized sitemap navigation
+* Custom forms
+* Custom views
+* Subgrids
+* Quick View forms
+* Related records
+* Tournament management
+* Team management
+* Player management
+* Match management
+* Registration management
+* Feedback management
 
-Tournament Form
+### Tournament Form
 
 The Tournament form provides access to:
 
-Tournament information,
-Registered players,
-Related matches,
-Tournament status,
-Tournament information card
+* Tournament information
+* Registered players
+* Related matches
+* Tournament status
+* Tournament Information Card
 
-Team Form
+### Team Form
 
 The Team form provides:
 
-Team information,
-Team roster,
-Related players
+* Team information
+* Team roster
+* Related players
+* Coach information through a Quick View component
 
-Coach information through a Quick View component
+---
 
-⚙️ Business Logic
+## ⚙️ Business Logic
 
 Several business rules and processes were implemented to enforce application requirements.
 
-Match Validation
+### Match Validation
 
 The application validates Team A and Team B selections to prevent invalid match configurations.
 
-Tournament Lifecycle
+### Tournament Lifecycle
 
 A Business Process Flow was implemented for the tournament lifecycle:
 
+```text
 Planning
    ↓
 Team Registration
@@ -232,71 +242,81 @@ Team Registration
 Execution
    ↓
 Completion
+```
 
 Tournament status is updated throughout the lifecycle.
 
-Tournament Completion
+### Tournament Completion
 
 The application checks whether all related matches have a winner.
 
 When all matches are completed:
 
-A success notification is displayed
-The tournament can be marked as completed
+* A success notification is displayed
+* The tournament can be marked as completed
 
 If matches are still missing winners:
 
-A warning is displayed
-The incomplete matches are identified
+* A warning is displayed
+* The incomplete matches are identified
 
-🔐 Security
+---
+
+## 🔐 Security
 
 The solution includes dedicated security roles:
 
-Coach
-Tournament Manager
+* **Coach**
+* **Tournament Manager**
 
 Field-Level Security is also used for feedback functionality to protect player identity and support anonymous feedback.
 
-💻 JavaScript & Command Bar Customization
+---
+
+## 💻 JavaScript & Command Bar Customization
 
 JavaScript was used to extend standard Model-driven App functionality.
 
-Lock Match
+### Lock Match
 
 A custom command allows users to lock a match after it has been played.
 
 The functionality:
 
-Checks the current Match record
-Sets the match to a locked state
-Saves the record
-Refreshes the form
-Tournament Completion Validation
+1. Checks the current Match record
+2. Sets the match to a locked state
+3. Saves the record
+4. Refreshes the form
+
+### Tournament Completion Validation
 
 JavaScript is used to validate related matches and provide user feedback when a tournament is ready to be completed.
 
-Team Filtering
+### Team Filtering
 
 Dynamic filtering is applied to Team A and Team B selections to prevent teams with the same coach from being selected against each other.
 
-🔌 C# Dataverse Plugins
+---
+
+## 🔌 C# Dataverse Plugins
 
 Custom server-side plugins were developed to implement business logic that should be enforced at the Dataverse level.
 
-Match Result Plugin
+### Match Result Plugin
 
 When a match result is submitted, the plugin:
 
-Updates tournament standings
-Updates winner-related statistics
-Tracks completed matches
-Determines when the final match has been completed
-Marks the tournament as completed when appropriate
-Prevent Team Deletion Plugin
+* Updates tournament standings
+* Updates winner-related statistics
+* Tracks completed matches
+* Determines when the final match has been completed
+* Marks the tournament as completed when appropriate
+
+### Prevent Team Deletion Plugin
 
 Prevents deletion of a Team when the team has registered players.
 
+```text
 Delete Team
      │
      ▼
@@ -307,147 +327,176 @@ Has registered players?
   ▼          ▼
 Block      Allow
 Delete     Delete
-Player Number Generation
+```
+
+### Player Number Generation
 
 When a new Player record is created, the system automatically generates a Player Number following the required format:
 
+```text
 P{IncrementalNumber}-{Initials}|{YYYY}
+```
 
 Example:
 
+```text
 P00001-PN|2025
-⚡ Power Automate
+```
+
+---
+
+## ⚡ Power Automate
 
 Power Automate was used to automate notifications and background business processes.
 
-Match Participant Notification
+### Match Participant Notification
 
 When teams are matched for a round, automated notifications are sent to the affected teams.
 
-Tournament Completion Notification
+### Tournament Completion Notification
 
 When a tournament is completed, an automated summary notification is generated.
 
-Match Statistics
+### Match Statistics
 
 When Team A or Team B changes on a Match record, the affected team's match statistics are recalculated and updated.
 
-Low Rating Feedback
+### Low Rating Feedback
 
 When feedback with a low rating is submitted, an in-app notification is sent to the Tournament Manager.
 
-📱 Embedded Canvas App
+---
+
+## 📱 Embedded Canvas App
 
 A Canvas App is embedded inside the Player form.
 
 It provides players with a dedicated interface for:
 
-Viewing upcoming matches
-Viewing past matches
-Filtering matches by Tournament
-Submitting feedback for completed tournaments
+* Viewing upcoming matches
+* Viewing past matches
+* Filtering matches by Tournament
+* Submitting feedback for completed tournaments
 
 The Canvas App provides a more focused user experience while remaining integrated with the Dataverse data model.
 
-🖥️ Custom HTML Web Resource
+---
+
+## 🖥️ Custom HTML Web Resource
 
 A custom HTML Web Resource was created for the Tournament form.
 
 The Tournament Information Card displays key information such as:
 
-Tournament Title
-Game Type
-Start Date
-End Date
-Maximum Teams
-Tournament Status
+* Tournament Title
+* Game Type
+* Start Date
+* End Date
+* Maximum Teams
+* Tournament Status
 
 The component provides a more visual and user-friendly presentation of tournament information.
 
-🧪 Testing
+---
 
-Unit tests were implemented using FakeXrmEasy for critical Dataverse Plugin logic.
+## 🧪 Testing
 
-Application functionality was validated in a Microsoft Dataverse
-development environment through end-to-end testing of forms,
-commands, plugins and Power Automate processes.
+Unit tests were implemented using **FakeXrmEasy** for critical Dataverse Plugin logic.
 
-Test scenarios include:
+Application functionality was validated in a Microsoft Dataverse development environment through end-to-end testing of forms, commands, plugins, and Power Automate processes.
 
-Match Result
-Tournament standings are updated correctly
-Final match completion is detected
-Tournament completion is triggered when appropriate
-Team Deletion
-Team deletion is blocked when registered players exist
-Team deletion is allowed when the team has no registered players
+### Test Scenarios
 
-🚀 Deployment
+#### Match Result
 
-The application components are organized within a Dataverse Solution.
+* Tournament standings are updated correctly
+* Final match completion is detected
+* Tournament completion is triggered when appropriate
+
+#### Team Deletion
+
+* Team deletion is blocked when registered players exist
+* Team deletion is allowed when the team has no registered players
+
+---
+
+## 🚀 Deployment
+
+The application components are organized within a **Dataverse Solution**.
 
 The solution can be exported from the development environment for deployment to a production environment.
 
-📸 Screenshots
+---
 
-Model-driven App
+## 📸 Screenshots
+
+### Model-driven App
 
 ![Model-driven App](screenshots/MainApp.png)
 
-Tournament Form
+### Tournament Form
 
 ![Tournament Form](screenshots/Tournamentform1.png)
+
 ![Tournament Form](screenshots/TournamentForm2.png)
 
-Match Form
+### Match Form
 
 ![Match Form](screenshots/MatchForm.png)
 
-
-Player Form & Embedded Canvas App
+### Player Form & Embedded Canvas App
 
 ![Player Canvas App](screenshots/PlayerForm1.png)
+
 ![Player Canvas App](screenshots/PlayerForm2.png)
+
 ![Player Canvas App](screenshots/PlayerForm3.png)
+
 ![Player Canvas App](screenshots/PlayerForm4.png)
+
 ![Player Canvas App](screenshots/PlayerForm5.png)
 
-Tournament Information Card
+### Tournament Information Card
 
 ![Tournament Information Card](screenshots/TournamentInfoCard.png)
 
+---
 
-🎯 Project Goals
+## 🎯 Project Goals
 
 This project demonstrates practical experience with:
 
-Microsoft Dataverse
-Power Apps development
-Model-driven Apps
-Canvas Apps
-Power Automate
-C# Dataverse Plugins
-JavaScript form customization
-Command Bar / Ribbon customization
-Business Process Flows
-Business Rules
-Field-Level Security
-Dataverse Solutions
-Unit Testing with FakeXrmEasy
+* Microsoft Dataverse
+* Power Apps development
+* Model-driven Apps
+* Canvas Apps
+* Power Automate
+* C# Dataverse Plugins
+* JavaScript form customization
+* Command Bar / Ribbon customization
+* Business Process Flows
+* Business Rules
+* Field-Level Security
+* Dataverse Solutions
+* Unit Testing with FakeXrmEasy
 
-🔧 Custom Development
+---
+
+## 🔧 Custom Development
 
 The solution combines low-code Power Platform components with custom development:
 
-- JavaScript Web Resources for client-side form behavior
-- Custom Command Bar actions
-- C# Dataverse Plugins for server-side business logic
-- Power Automate for workflow automation
-- HTML Web Resource for custom UI
-- FakeXrmEasy for plugin unit testing
+* JavaScript Web Resources for client-side form behavior
+* Custom Command Bar actions
+* C# Dataverse Plugins for server-side business logic
+* Power Automate for workflow automation
+* HTML Web Resource for custom UI
+* FakeXrmEasy for plugin unit testing
 
-👩‍💻 Author
+---
 
-Irina Jovanovska
+## 👩‍💻 Author
+
+**Irina Jovanovska**
 
 Microsoft Power Platform / Dynamics 365 Developer Portfolio Project
